@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Fleet | Anner Park Farm</title>
+    <link rel="icon" href="/images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2 class="logo"><a href="/">Anner Park Farm</a></h2>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label>
+        <ul class="all-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/fleet">Fleet</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="portfolio" id="portfolio"> 
+        <h2>Our Fleet</h2>
+        <p>Delve into the technological backbone of Anner Park Farm by exploring our meticulously maintained fleet of machines. Learn about the cutting-edge equipment that enables us to uphold the highest standards in farming practices.</p>
+        <ul class="cards">
+          <li class="card"> 
+            <img src="images/CX840.jpeg" alt="Image currently not available">
+            <h3>New Holland CX840</h3>
+            <p>The New Holland CX840 excels in harvesting with advanced technology, high capacity, and versatile crop handling. A standout for modern agricultural needs.</p>
+          </li>
+          <li class="card"> 
+            <img src="images/CX760.jpeg" alt="Image currently not available">
+            <h3>New Holland CX760</h3>
+            <p>The New Holland CX760 redefined harvesting efficiency with cutting-edge tech, impressive capacity, and adaptable crop handling. A beacon of innovation for modern agriculture.</p>
+          </li>
+          <li class="card">
+            <img src="images/MF7618.jpeg" alt="Image currently not available">
+            <h3>Massey Ferguson MF 7618</h3>
+            <p>The Massey Ferguson MF 7618 boasts a robust engine, advanced transmission, and versatile capabilities, making it a powerful, efficient, and adaptable choice for farmers' diverse agricultural needs.</p>
+          </li>
+          <li class="card">
+            <img src="images/MF7495.jpeg" alt="Image currently not available">
+            <h3>Massey Ferguson MF 7495</h3>
+            <p>The Massey Ferguson MF 7495, with its powerful engine, advanced transmission, and versatile design, offers farmers a reliable and efficient solution for diverse agricultural tasks.</p>
+          </li>
+          <li class="card">
+            <img src="https://toys-farm.com/data/articles/images/lightbox/big/toys-farm-2021---massey-ferguson-6160-dynashift---lim.-ed._53213_0.jpg?h=415b54e3" alt="Image currently not available">
+            <h3>Massey Ferguson MF 6160</h3>
+            <p>The Massey Ferguson MF 6160 is appreciated for its reliable performance, compact design, and versatility, making it a well-regarded tractor for various agricultural tasks.</p>
+          </li>
+          <li class="card">
+            <img src="/images/Mule.jpeg" alt="Image currently not available">
+            <h3>Kawasaki Mule</h3>
+            <p>The Kawasaki Mule is renowned for its exceptional durability, versatility, and off-road capability, making it a reliable and robust utility vehicle for a wide range of applications.</p>
+          </li>
+          <h1><b><u>MORE COMING SOON!!!</u></b></h1> <!-- I will need to add more machines, need to get some more photos of them first though -->
+        </ul>
+        <button id="backToTopBtn" onclick="scrollToTop()">Back to Top</button>
+        <br><br>
+    </section>
+        <footer>
+          <div>
+            <span>&copy; 2024 Jack Palmer. All rights reserved.</span>
+            <img src="images/Logo.png" width="60px">
+          </div>
+        </footer>
+    <script>
+        window.onscroll = function() {
+          scrollFunction();
+        };
+  
+        function scrollFunction() {
+          var backToTopBtn = document.getElementById("backToTopBtn");
+  
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopBtn.style.display = "block";
+          } else {
+            backToTopBtn.style.display = "none";
+          }
+        }
+  
+        function scrollToTop() {
+          var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+          window.scrollTo(0, 0);
+        }
+      </script>
+  </body>
+</html>
